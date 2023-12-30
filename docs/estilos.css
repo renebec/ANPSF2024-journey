@@ -1,0 +1,123 @@
+body {
+font-family:century gothic;
+background:#252626;
+width:720px;
+margin:10px auto;
+}
+
+header,section,footer,nav{
+display:block;
+}
+
+a{
+background-color:#979999;
+}
+
+h1{
+font-family:cambria;serif;
+background:#515A5A ;
+padding:2% 2%;
+color:beige;
+}
+
+.autor{
+font-size:75%;
+padding-left:70%;
+padding-top:0%;
+color:white;
+}
+
+.menu li{
+margin:1px auto;
+border: 1px solid black;
+padding: 0.2%;
+font:bold 14px century gothic;
+display: inline;
+
+}
+
+
+section{
+font-size:95%;
+border:1px solid black;
+margin-right:5px;
+padding-right: 5px;
+padding-left:5px;
+padding-top:15px;
+padding-bottom:2px;
+background:#BBBDBD;
+word-break: break-word;
+}
+
+
+.agrupar1{
+text-align:justify;
+margin:25px 5px;
+}
+
+h3{
+color:beige;
+padding-left:2%;
+margin:0px 0px;
+font-size:100%
+}
+
+table, th, td {
+  border:1px solid white;
+  font-family: courier;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+  white-space:no-wrap;
+
+}
+
+
+
+.table1, th, td {
+  border:1px solid white;
+  font-family: courier;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+  table-layout: fixed;
+  word-wrap: break-word;
+  word-break:break-all;
+}
+
+caption {
+caption-side:bottom;
+text-align:left;
+}
+
+.bullets{
+margin:10px auto;
+width:670px;
+background:lightgoldenrodyellow
+}
+
+#more {display: none;background:#BBBDBD}
+#more2 {display: none;background:#BBBDBD}
+#more3 {display: none;background:#BBBDBD}
+#more4 {display: none;background:#BBBDBD}
+#more5 {display: none;background:#BBBDBD}
+#more6 {display: none;background:#BBBDBD}
+#more7 {display: none;background:#BBBDBD}
+#more8 {display: none;background:#BBBDBD}
+
+button{
+background:grey;
+color:white;
+}
+
+footer{
+font-size:75%;
+text-align:center;
+color:beige;
+}
+
+.alert alert-success{
+background:red;
+}
