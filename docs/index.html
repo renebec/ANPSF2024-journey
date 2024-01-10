@@ -29,6 +29,17 @@
         <br>
         <br>
         <br>
+        <text style="color:#906090;">Forests are an indispensable foundation of life for humans. They fulfil multiple functions
+            in a single area: they are a source of income to many; they provide wood, an environmentally
+            compatible, renewable resource, as well as foodstuffs and many other basic commodities; they
+            protect the soils from erosion and stabilize the water table; they stabilize the climate on a
+            regional and global level and they offer humans numerous opportunities for recreation and
+                relaxation.</text> <text style="color:#906090;">Remote sensing using satellites can make a significant contribution to regional and global
+            forest cover assessment. Satellite images permit the observation of large geographical areas and
+        can be repeated at short time intervals.</text>
+        <br>
+        <br>
+        <br>
     <h3>
         1. Selección de imágenes
     </h3>
@@ -38,7 +49,7 @@
             &emsp;Se seleccionó una escena multiespectral de la plataforma satelital <b>SENTINEL 2</b>
         capturada con el sensor <b>Multi Spectral Intrument</b> (MSI) con fecha
         de registro de 2023-03-13, y obtenida a través de la herramienta de gestión
-        <a href="https://scihub.copernicus.eu/" target="_blank"> Copernicus </a> de
+        <a href="https://scihub.copernicus.eu/" target="_blank" style="color:#003180;"> Copernicus </a> de
         la <b>Agencia Espacial Europea</b> (ESA por sus siglas en inglés). Las características
         de la imagen
             <span id="dots">...</span><span id="more"> se describen a continuación:
@@ -134,6 +145,19 @@
     </h3>
     </header>
     <section>
+        <text style="color:purple;">Steep terrain produces a topographic effect in digital
+            satellite data that can make it difficult to distinguish changes in vegetation
+            species or health from changes in illumination geometry.</text style=color:black;>
+        <text style="color:purple;">In mountainous environments, topography strongly affects
+            the reflectance due to illumination effects and cast shadows, which introduce errors
+            in land cover classifications.</text>
+        <text>There are several standard algorithms including the C correction model to diminish
+            these kind of effects of topography.</text> <text style="color:purple;"> Enhanced C-correction
+        resulted in significantly (p ≤ 0.05) higher classification accuracies and better forest
+        classifications, especially for the mixed forests.</text>
+    </text>
+        <br>
+        <br>
            Se utilizó el software SAGA incluido en QGIS así como el <b>Modelo de Elevación de
         Terreno</b> (MET) para realizar el procedimiento de corrección de iluminación topográfica
         por el método de <b>factor C</b> aplicado a las bandas 3, 4, 8 y 11 de la escena MSI.
@@ -233,23 +257,17 @@
             <text style="color:blue;">https://www.sciencedirect.com/science/article/abs/pii/S0303243411000584</text>
         <br>
             <br>
-            In mountainous environments, topography strongly affects the reflectance due to illumination
-            effects and cast shadows, which introduce errors in land cover classifications. However,
+            <text style="color:purple;">In mountainous environments, topography strongly affects the reflectance due to illumination
+                effects and cast shadows, which introduce errors in land cover classifications.</text> However,
             topographic correction is not routinely implemented in standard data pre-processing chains
             (e.g., Landsat Analysis Ready Data), and there is a lack of consensus whether topographic
             correction is necessary, and if so, how to conduct it. <br>
-            We found that both the enhanced C-correction and the physical model performed very well and
+            We found that both the <text style="color:purple;"> enhanced C-correction</text> and the physical model performed very well and
             largely eliminated the correlation (Pearson’s correlation coefficient r ranges from 0.06 to 0.24)
             between surface reflectance and illumination condition, but the physical model performed best
             (r ranges from 0.05 to 0.11). Both image composites, and spectral-temporal metrics generated from
-            corrected imagery, resulted in significantly (p ≤ 0.05) higher classification accuracies and better
-            forest classifications, especially for the mixed forests. <br>
-            We found that both the enhanced C-correction and the physical model performed very well and
-            largely eliminated the correlation (Pearson’s correlation coefficient r ranges from 0.06 to 0.24)
-            between surface reflectance and illumination condition, but the physical model performed best
-            (r ranges from 0.05 to 0.11). Both image composites, and spectral-temporal metrics generated
-            from corrected imagery, resulted in significantly (p ≤ 0.05) higher classification accuracies
-            and better forest classifications, especially for the mixed forests. <br>
+            corrected imagery, <text style="color:purple;">resulted in significantly (p ≤ 0.05) higher classification accuracies and better
+            forest classifications, especially for the mixed forests.</text> <br>
             Link <br>&#128071;<br>
             <text style="color:blue;">https://www.sciencedirect.com/science/article/pii/S0303243422000423</text>
             <br>
@@ -271,8 +289,8 @@
             <text style="color:blue;">https://www.researchgate.net/publication/270895671_Review_of_Different_Topographic_Correction_Techniques_for_Satellite_Imagery</text>
             <br>
             <br>
-            Steep terrain produces a topographic effect in digital satellite data that can make it difficult
-            to distinguish changes in vegetation species or health from changes in illumination geometry. A
+            <text style="color:purple;">Steep terrain produces a topographic effect in digital satellite data that can make it difficult
+                to distinguish changes in vegetation species or health from changes in illumination geometry.</text> A
             multiple linear regression analysis of direct solar irradiance, slope, and elevation confirms that
             these topographic variables have significant leverage on Landsat TM brightness values from a
             deciduous/mixed forest in northern New Hampshire, USA. A number of standard correction algorithms
@@ -300,6 +318,24 @@
     </h3>
     </header>
     <section>
+        <br>
+        <br>
+        <text style="color:purple;">Remote sensing phenology studies use data gathered by satellite
+            sensors that measure wavelengths of light absorbed and reflected by green plants. Certain
+            pigments in plant leaves strongly absorb wavelengths of visible (red) light. The leaves
+            themselves strongly reflect wavelengths of near-infrared light, which is invisible to
+            human eyes</text>. <text style="color:purple;"> It is well known that the
+            reflectance of light spectra from plants changes with plant type, water content within
+        tissues, and other intrinsic factors [10]</text>.
+        <text style="color:purple;">The <b>NDVI</b> is a dimensionless index that
+        monitors vegetation dynamic by
+            computing the difference between visible and near-infrared reflectance to estimate the
+        concentration of greens vegetation in a particular area (Weier & Herring, 2000)</text>
+        <text style="color:purple;">The main applications for remote sensing of vegetation are based on the following
+            light spectra: (i) the ultraviolet region (UV), which goes from 10 to 0.38 &micro; (ii) the
+            visible spectra, which are composed of the blue (0.450–0.495 &micro;), green (0.495−0.57 &micro;),
+            and red (0.620–0.75 &micro;;) wavelength regions; and (iii) the near and mid infrared band
+        (0.85–1.7 &micro;) [11, 12].</text>
         <br>
         <br>
         Con los datos de la banda <b>4</b> (664.6 &micro;) y <b>8</b> (832.8 &micro;) se generó el índice
@@ -337,10 +373,10 @@
         <br>
         <br>
         <hr />
-        <i>Remote sensing phenology studies use data gathered by satellite sensors that measure
+        <text style="color:purple;"><i>Remote sensing phenology studies use data gathered by satellite sensors that measure
             wavelengths of light absorbed and reflected by green plants. Certain pigments in plant
             leaves strongly absorb wavelengths of visible (red) light. The leaves themselves strongly
-            reflect wavelengths of near-infrared light, which is invisible to human eyes.<br>
+            reflect wavelengths of near-infrared light, which is invisible to human eyes.</text><br>
             Link <br>&#128071;<br>
             <text style="color:blue;">https://www.usgs.gov/special-topics/remote-sensing-phenology/science/vegetation-indices#:~:text=Vegetation%20Indices%20Remote%20sensing%20phenology%20studies%20use%20data,leaves%20strongly%20absorb%20wavelengths%20of%20visible%20%28red%29%20light.</text>
         <br>
@@ -349,9 +385,9 @@
             assessment of moisture conditions. NDVI is one of the crucial and extensively applied
             elements of satellite-driven wildfire sensitivity mapping (Chuvieco et al., 2019) . Dry
             vegetation condition is extremely flammable, whereas the green and fresh vegetation is
-            nonflammable. The NDVI is a dimensionless index that monitors vegetation dynamic by
+            nonflammable. <text style="color:purple;">The NDVI is a dimensionless index that monitors vegetation dynamic by
             computing the difference between visible and near-infrared reflectance to estimate the
-            concentration of greens vegetation in a particular area (Weier & Herring, 2000).<br>
+        concentration of greens vegetation in a particular area (Weier & Herring, 2000)</text>.<br>
             Link <br>&#128071;<br>
             <text style="color:blue;">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/vegetation-index</text>
         <br>
@@ -363,32 +399,33 @@
             <br>
             <br>
             [...]Remote sensing of vegetation is mainly performed by obtaining the electromagnetic wave
-            reflectance information from canopies using passive sensors. It is well known that the
+            reflectance information from canopies using passive sensors. <text style="color:purple;">
+        It is well known that the
             reflectance of light spectra from plants changes with plant type, water content within
-            tissues, and other intrinsic factors [10]. The reflectance from vegetation to the
+        tissues, and other intrinsic factors [10]</text>. The reflectance from vegetation to the
             electromagnetic spectrum (spectral reflectance or emission characteristics of vegetation)
             is determined by chemical and morphological characteristics of the surface of organs or
-            leaves [3]. The main applications for remote sensing of vegetation are based on the following
+            leaves [3]. <text style="color:purple;">The main applications for remote sensing of vegetation are based on the following
             light spectra: (i) the ultraviolet region (UV), which goes from 10 to 380 nm; (ii) the
             visible spectra, which are composed of the blue (450–495 nm), green (495−570 nm),
             and red (620–750 nm) wavelength regions; and (iii) the near and mid infrared band
-            (850–1700 nm) [11, 12].<br>
+        (850–1700 nm) [11, 12].</text><br>
             Link <br>&#128071;<br>
             <text style="color:blue;">https://www.hindawi.com/journals/js/2017/1353691/</text>
             <br>
             <br>
-            Forests are an indispensable foundation of life for humans. They fulfil multiple functions
+            <text style="color:purple;">Forests are an indispensable foundation of life for humans. They fulfil multiple functions
             in a single area: they are a source of income to many; they provide wood, an environmentally
             compatible, renewable resource, as well as foodstuffs and many other basic commodities; they
             protect the soils from erosion and stabilize the water table; they stabilize the climate on a
             regional and global level and they offer humans numerous opportunities for recreation and
-            relaxation. These functions have different levels of significance in the various regions of
+                relaxation.</text> These functions have different levels of significance in the various regions of
             the earth. For the past 20 years, increases in the produce and income generated resulted from
             the increase of the agricultural area rather than that of products per unit area due to the high
             rate of population growth correlated with a limited area of land available for cropping and housing.<br>
-            [...]Remote sensing using satellites can make a significant contribution to regional and global
+            [...]<text style="color:purple">Remote sensing using satellites can make a significant contribution to regional and global
             forest cover assessment. Satellite images permit the observation of large geographical areas and
-            can be repeated at short time intervals and the costs are reasonable. The basic forest cover
+        can be repeated at short time intervals and the costs are reasonable.</text> The basic forest cover
             information that can be obtained from satellite images at different spatial resolutions relates
             to the area and spatial distribution of broad forest cover types, to the degree of canopy
             fragmentation and to the forest cover changes occurring. Recent research papers show that remotely
