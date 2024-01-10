@@ -87,6 +87,21 @@ table, th, td {
   word-break:break-all;
 }
 
+.centerx{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:50%;
+}
+
+#kmvs {
+width:250px;
+float:left;
+margin:0 20px 0 0 ;
+border: 2px solid white;
+clear:right;
+}
+
 caption {
 caption-side:bottom;
 text-align:left;
