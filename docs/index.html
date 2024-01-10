@@ -62,8 +62,8 @@
         muestra la descripción de las 13 bandas del sensor MSI.
         <br>
         <br>
-
-        <i style="color:#557090;">Tabla 1. Descripción espectral y espacial de las bandas del sensor MSI.</i>
+        <br>
+        <i style="color:#557090;">Tabla 1. Descripción de las bandas del sensor MSI.</i>
             <table border=0
            style="background-color:lightgrey;width:100%;"
            class="table1">
@@ -87,8 +87,9 @@
                  </table>
         <br>
         <br>
+        <br>
         Escena descargada:<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...\
         <br>
         <br>
         </span>
@@ -115,9 +116,9 @@
         <br>
         <br>
             Polígono:<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\ANPSF_2023_ZONA.shp<br>
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...43\ANPSF_2023_ZONA.shp<br>
             Salida:<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\DOS_20230313\DOS_20230313<br>
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...43\DOS_20230313\DOS_20230313<br>
         <br>
         <br>
         </span>
@@ -146,6 +147,7 @@
         ángulo cenital y ángulo azimutal (Tabla 2).
         <br>
         <br>
+        <br>
         <i style="color:#557090;">Tabla 2. Datos de orientación solar de la escena MSI.</i>
         <table border=0
            style="background-color:lightgrey;width:100%;"
@@ -157,6 +159,7 @@
                         <tr style="text-align:left;color:black;">  <td> 31.9443</td><td align="center">138.7315</td></tr>
 
                  </table>
+        <br>
         <br>
         <br>
         El valor del ángulo cenital se utilizó para obtener el ángulo de
@@ -179,6 +182,7 @@
         que se muestran en la Tabla 3.
         <br>
         <br>
+        <br>
         <i style="color:#557090;">Tabla 3. Parámetros para la corrección de iluminación por factor C.</i>
         <table border=0
            style="background-color:lightgrey;width:100%;"
@@ -194,8 +198,10 @@
         </table>
         <br>
         <br>
+        <br>
         Como resultado se obtuvo una imagen mejorada con mayor contraste entre las coberturas
         presentes en la escena como se muestra en la Figura 1.
+        <br>
         <br>
         <br>
         <img src="view compare1.png" width="100%" alt="Corrección de iluminación por factor C"><br>
@@ -207,14 +213,84 @@
             Datos de elevación:<br>
         D:\Documents\GIS\AGS_ANPSF\ANPSF_2023\MED_20230313_ANPSF.tif<br>
             Salida:<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\C3_20230313\C_20230313_B0stack_raster.tif
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...\C3_20230313\C_20230313_B0stack_raster.tif
+        <br>
+        <br>
+        <br>
+        <hr />
+        <br>
+        <i>
+        This paper aims to evaluate different methods for topographic correction of Landsat TM-ETM+ data.
+            They were assessed for 15 ETM+ images taken under different illumination conditions, using two
+            criteria: (a) reduction of the standard deviation (SD) for different land-covers and (b) increase
+            in temporal stability of a time series for individual pixels. We observed that results improve
+            when land-cover classes where processed independently when applying the more advanced correction
+            algorithms such as the C-correction and the Minnaert correction. Best results were obtaining for
+            the C-correction and the empiric–statistic correction. Decreases of the SD for bare soil pixels
+            were larger than 100% for the C-correction and the empiric–statistic correction method compared to
+            the other correction methods in the visible spectrum and larger than 50% in the IR region.<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.sciencedirect.com/science/article/abs/pii/S0303243411000584</text>
+        <br>
+            <br>
+            In mountainous environments, topography strongly affects the reflectance due to illumination
+            effects and cast shadows, which introduce errors in land cover classifications. However,
+            topographic correction is not routinely implemented in standard data pre-processing chains
+            (e.g., Landsat Analysis Ready Data), and there is a lack of consensus whether topographic
+            correction is necessary, and if so, how to conduct it. <br>
+            We found that both the enhanced C-correction and the physical model performed very well and
+            largely eliminated the correlation (Pearson’s correlation coefficient r ranges from 0.06 to 0.24)
+            between surface reflectance and illumination condition, but the physical model performed best
+            (r ranges from 0.05 to 0.11). Both image composites, and spectral-temporal metrics generated from
+            corrected imagery, resulted in significantly (p ≤ 0.05) higher classification accuracies and better
+            forest classifications, especially for the mixed forests. <br>
+            We found that both the enhanced C-correction and the physical model performed very well and
+            largely eliminated the correlation (Pearson’s correlation coefficient r ranges from 0.06 to 0.24)
+            between surface reflectance and illumination condition, but the physical model performed best
+            (r ranges from 0.05 to 0.11). Both image composites, and spectral-temporal metrics generated
+            from corrected imagery, resulted in significantly (p ≤ 0.05) higher classification accuracies
+            and better forest classifications, especially for the mixed forests. <br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.sciencedirect.com/science/article/pii/S0303243422000423</text>
+            <br>
+            <br>
+            Semi-empirical topographic normalization methods (e.g., C-correction) have been widely used to
+            correct illumination differences in optical satellite data. The objective of this study was to
+            examine the precision and accuracy of the C-correction's empirical parameter, c, as a function
+            of the sample from which it was derived.<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.sciencedirect.com/science/article/abs/pii/S0034425711000411</text>
+            <br>
+            <br>
+            Different approaches have been developed to reduce topographical effects but each method has
+            different impact on different situation. In this paper, we reviewed recently developed as well
+            as previous topographic correction techniques. Also discuss future scope and further research
+            is needed with imagery on a global basis to derive guidelines on which method performs best
+            under which situation.<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.researchgate.net/publication/270895671_Review_of_Different_Topographic_Correction_Techniques_for_Satellite_Imagery</text>
+            <br>
+            <br>
+            Steep terrain produces a topographic effect in digital satellite data that can make it difficult
+            to distinguish changes in vegetation species or health from changes in illumination geometry. A
+            multiple linear regression analysis of direct solar irradiance, slope, and elevation confirms that
+            these topographic variables have significant leverage on Landsat TM brightness values from a
+            deciduous/mixed forest in northern New Hampshire, USA. A number of standard correction algorithms
+            are described, including the Regression model, Lambertian model, C-correction model, Minnaert model,
+            and SCS model.<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.researchgate.net/publication/259275014_Topographic_correction_of_satellite_images_Theory_and_application</text>
+            <br>
+            <br>
+
+        </i>
+        <hr />
         <br>
         <br>
         </span>
                 <button onclick="myFunction3()" id="myBtn3">Leer más</button>
         <br>
-        <br>
-    </section>
+        </section>
         <br>
         <br>
 
@@ -224,6 +300,8 @@
     </h3>
     </header>
     <section>
+        <br>
+        <br>
         Con los datos de la banda <b>4</b> (664.6 &micro;) y <b>8</b> (832.8 &micro;) se generó el índice
         de Vegetación de Diferencias Normalizado (<b>NDVI</b>) y además se generó un Índice de Vigor Vegetal
         (<b>IVV</b>) que expresa la presencia de vegetación en función de las bandas <b>4</b>, <b>8</b> y
@@ -251,16 +329,87 @@
         distribución del <b>IVV</b> como se puede observar en la Figura...<b style="color:red;"> continuar </b>
         <br>
         <br>
+        <br>
         <img src="hist ndvi vs ivv.png" width="100%" alt="index hist"><br>
         <i style="color:#557090"> Figura 2. En color naranja podemos
         observar el histograma con los datos del <b>IVV</b> con mayor amplitud y varianza
         que el <b>NDVI</b> en color azul.</i>
         <br>
         <br>
+        <hr />
+        <i>Remote sensing phenology studies use data gathered by satellite sensors that measure
+            wavelengths of light absorbed and reflected by green plants. Certain pigments in plant
+            leaves strongly absorb wavelengths of visible (red) light. The leaves themselves strongly
+            reflect wavelengths of near-infrared light, which is invisible to human eyes.<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.usgs.gov/special-topics/remote-sensing-phenology/science/vegetation-indices#:~:text=Vegetation%20Indices%20Remote%20sensing%20phenology%20studies%20use%20data,leaves%20strongly%20absorb%20wavelengths%20of%20visible%20%28red%29%20light.</text>
+        <br>
+        <br>
+            NDVI assists in forecasting fire zones, extracting vegetation health information, and
+            assessment of moisture conditions. NDVI is one of the crucial and extensively applied
+            elements of satellite-driven wildfire sensitivity mapping (Chuvieco et al., 2019) . Dry
+            vegetation condition is extremely flammable, whereas the green and fresh vegetation is
+            nonflammable. The NDVI is a dimensionless index that monitors vegetation dynamic by
+            computing the difference between visible and near-infrared reflectance to estimate the
+            concentration of greens vegetation in a particular area (Weier & Herring, 2000).<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/vegetation-index</text>
+        <br>
+        <br>
+            [...]Remote sensed information of growth, vigor, and their dynamics from terrestrial
+            vegetation can provide extremely useful insights for applications in environmental monitoring,
+            biodiversity conservation, agriculture, forestry, urban green infrastructures, and other
+            related fields.[...]
+            <br>
+            <br>
+            [...]Remote sensing of vegetation is mainly performed by obtaining the electromagnetic wave
+            reflectance information from canopies using passive sensors. It is well known that the
+            reflectance of light spectra from plants changes with plant type, water content within
+            tissues, and other intrinsic factors [10]. The reflectance from vegetation to the
+            electromagnetic spectrum (spectral reflectance or emission characteristics of vegetation)
+            is determined by chemical and morphological characteristics of the surface of organs or
+            leaves [3]. The main applications for remote sensing of vegetation are based on the following
+            light spectra: (i) the ultraviolet region (UV), which goes from 10 to 380 nm; (ii) the
+            visible spectra, which are composed of the blue (450–495 nm), green (495−570 nm),
+            and red (620–750 nm) wavelength regions; and (iii) the near and mid infrared band
+            (850–1700 nm) [11, 12].<br>
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://www.hindawi.com/journals/js/2017/1353691/</text>
+            <br>
+            <br>
+            Forests are an indispensable foundation of life for humans. They fulfil multiple functions
+            in a single area: they are a source of income to many; they provide wood, an environmentally
+            compatible, renewable resource, as well as foodstuffs and many other basic commodities; they
+            protect the soils from erosion and stabilize the water table; they stabilize the climate on a
+            regional and global level and they offer humans numerous opportunities for recreation and
+            relaxation. These functions have different levels of significance in the various regions of
+            the earth. For the past 20 years, increases in the produce and income generated resulted from
+            the increase of the agricultural area rather than that of products per unit area due to the high
+            rate of population growth correlated with a limited area of land available for cropping and housing.<br>
+            [...]Remote sensing using satellites can make a significant contribution to regional and global
+            forest cover assessment. Satellite images permit the observation of large geographical areas and
+            can be repeated at short time intervals and the costs are reasonable. The basic forest cover
+            information that can be obtained from satellite images at different spatial resolutions relates
+            to the area and spatial distribution of broad forest cover types, to the degree of canopy
+            fragmentation and to the forest cover changes occurring. Recent research papers show that remotely
+            sensed data are well correlated with forest stand parameters. Vegetation index is a spectral
+            transformation of at least two optical bands to obtain the vegetation properties. Normalized
+            difference vegetation index (NDVI), green normalized difference vegetation index (GNDVI) and
+            soil-adjusted vegetation index (SAVI) were cited in numerous research papers and they have been
+            widely used in the forest researches to investigate the relationship between forest parameters
+            such as diameter at breast height (DBH), per cent crown cover, tree age class, tree height, basal
+            area, tree volume and aboveground living biomass.
+            Link <br>&#128071;<br>
+            <text style="color:blue;">https://link.springer.com/chapter/10.1007/978-981-19-4200-6_8</text>
+            <br>
+            <br>
+        </i>
+        <hr />
+        <br>
         <br>
         <br>
         Salida:<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\INDEX VVI
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...\INDEX VVI
         <br>
         <br>
         Fuentes:<br>
@@ -301,6 +450,7 @@
         <!---<p style="text-align:center;"><iframe src="https://media.licdn.com/dms/image/C5612AQH8kEizAouznA/article-cover_image-shrink_600_2000/0/1626424726069?e=2147483647&v=beta&t=deUL_yPDFPXK8dkspX2oJZWX1qqyx3XBokl02TN8x9k"
                                               style="width:95%;height:500px"></iframe></p>--->
         <br>
+        <br>
        <img src="https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1562788530/Visualizing_K-Means_algorithm_1_eefbvf.gif"
             style="width:50%;" class="centerx"></img>
         <i style="color:#557090;">Fig 2. Representación animada del funcionamiento del algoritmo de
@@ -315,8 +465,8 @@
         dos imágenes clasificadas:
         <br>
         <br>
-        a) <b>clases NDVI</b><br>
-        b) <b>clases IVV</b>
+        &emsp;&emsp;a) <b>clases NDVI</b><br>
+        &emsp;&emsp;b) <b>clases IVV</b>
         <br>
         <br>
         En el proceso se utilizó el
@@ -334,6 +484,7 @@
         a ser menos significativa.
         <br>
         <br>
+        <br>
         <img src="plot kmeans codo.png" width="100%" alt="codo k means"><br>
         <i style="color:#557090;">Fig 3. Número óptimo de clases. En la gráfica izquierda podemos observar
             que a partir de tres clusters la diferencia en las sumas de cuadrados se
@@ -344,6 +495,7 @@
         <br>
         A partir de las tres clases o categorías obtenidas se calcularon
         las estadísticas por zona (clase) de los índices de vegetación <b>NDVI</b> y <b>IVV</b> (Tabla 6).
+        <br>
         <br>
         <br>
         <i style="color:#557090;">Tabla 6. Estadísticas de los índices de vegetación en cada clase
@@ -359,9 +511,8 @@
                         <tr style="text-align:left;color:black;"><td align="center">Clase 2</td><td align="center">0.1672</td><td align="center">0.0136</td><td align="center">0.4827</td><td align="center">0.0300</td></tr>
                         <tr style="text-align:left;color:black;"><td align="center">Clase 3</td><td align="center">0.2289</td><td align="center">0.0285</td><td align="center">0.5839</td><td align="center">0.0350</td></tr>
 
-
-
         </table>
+        <br>
         <br>
         <br>
         Se observa una mayor amplitud en los valores del IVV con respecto al NDVI, así como también una
@@ -375,6 +526,7 @@
         Las tres clases representan distintos tipos de cobertura vegetal en función del <b>vigor vegetal</b>
         relacionado con el verdor y con eel contenido de humedad en la planta, aspectos que se expresan a
         través de la relaciones entre las bandas 4, 8 y 11.
+        <br>
         <br>
         <br>
         <i style="color:#557090;">Tabla 8. Descripción de las clases obtenidas por medio de la clasificación
@@ -393,6 +545,7 @@
         </table>
         <br>
         <br>
+        <br>
          Notamos que el conteo de pixeles identificados en cada clase difiere notablemente
             en los resultados de la clasificación a partir del <b>NDVI</b> y del
             <b>IVV</b>. Comparado con los resultados a partir del <b>IVV</b>, en la clasificación
@@ -402,6 +555,7 @@
             claridad en la Figura 3.
             <br>
             <br>
+        <br>
         <img src="kmvs.png" width="100%" alt="" width="300" id="kmvs"><br>
             <caption><i style="color:#557090;">Fig 3. En la imagen podemos ver en la parte
                 superior la clasificación obtenida a partir del índice <b>NDVI</b>
@@ -441,6 +595,9 @@
             <br>
             <br>
             <br>
+        <hr />
+        <br>
+        <br>
 
 
             <section><br />
@@ -451,16 +608,12 @@
         https://www.dannyadam.com/blog/2019/07/kmeans1d-globally-optimal-efficient-1d-k-means/<br>
         https://pypi.org/project/kmeans1d/<br>
         https://arxiv.org/abs/1701.07204<br>
-        https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-04712011000300004<br>
+        https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-04712011000300004
+                <br>
+                <br>
         Salida:<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\kmeans pca.hdr<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\kmeans ivv.hdr<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\roi pca.roi<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\roi pca union.roi<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\roi ivv.roi<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\roi ivv union.roi<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\roi pca to tif.tif<br>
-        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_20230313T172111_N0509_R012_T13QGE_20230313T222343\CLASSIFY_LANDCOVER\roi ivv to tif.tif
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...\CLASSIFY_LANDCOVER\kmeans ivv.hdr<br>
+        D:\Documents\GIS\IMG_SAT\S2A_MSIL1C_2023...\CLASSIFY_LANDCOVER\roi ivv to tif.tif
         </section>
                 <br>
         <br>
@@ -501,6 +654,7 @@
         La variable <b>aspecto</b> se particionó en 4 categorías: Norte, Sur, Este y Oeste. El análisis
         busca detectar si es que existe alguna influencia significativa de las variables topográficas
         sobre la distribución de las clases de vegetación.
+        <br>
         <br>
         <br>
         <i style="color:#557090;">Tabla 10. Resultados del modelo de regresión logística.
@@ -553,6 +707,7 @@
         </table>
         <br>
         <br>
+        <br>
         En la Figura 4 se puede observar que la probabilidad de ocurrencia del <b>bosque v1 y v2</b>
         se ve influenciada por el aumento en los valores de la pendiente y es ligeramente superior en orientación
         Norte. La vegetación de <b>bosque s</b> presenta probabilidades de ocurrencia
@@ -588,6 +743,7 @@
         aspect: es la orientación del terreno.
         <br>
         <br>
+        <br>
         <i style="color:#557090;">Tabla 11. Resultados del modelo de regresión lineal.</i>
             <br>
             <br>
@@ -612,6 +768,7 @@
         </table>
         <br>
         <br>
+        <br>
         Con los datos de los coeficientes se construyó la siguiente superficie de respuesta:
         <br>
         <br>
@@ -632,6 +789,7 @@
         regresión lineal múltiple. El eje x representa los valores de la pendiente;
             el eje y representa los valores de aspecto donde 0 indica la
             orientación Norte y 180 la orientación Sur.</i>
+        <br>
         <br>
         <br>
         Referencias:<br>
