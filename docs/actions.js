@@ -1,3 +1,19 @@
+function myFunction0() {
+  var dots0 = document.getElementById("dots0");
+  var moreText0 = document.getElementById("more0");
+  var btnText0 = document.getElementById("myBtn0");
+
+  if (dots0.style.display === "none") {
+    dots0.style.display = "inline";
+    btnText0.innerHTML = "Leer más";
+    moreText0.style.display = "none";
+  } else {
+    dots0.style.display = "none";
+    btnText0.innerHTML = "Mostrar menos";
+    moreText0.style.display = "inline";
+  }
+}
+
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -91,6 +107,23 @@ function myFunction6() {
     dots6.style.display = "none";
     btnText6.innerHTML = "Mostrar menos";
     moreText6.style.display = "inline";
+  }
+}
+
+
+function myFunction6b() {
+  var dots6b = document.getElementById("dots6b");
+  var moreText6b = document.getElementById("more6b");
+  var btnText6b = document.getElementById("myBtn6b");
+
+  if (dots6b.style.display === "none") {
+    dots6b.style.display = "inline";
+    btnText6b.innerHTML = "Leer más";
+    moreText6b.style.display = "none";
+  } else {
+    dots6b.style.display = "none";
+    btnText6b.innerHTML = "Mostrar menos";
+    moreText6b.style.display = "inline";
   }
 }
 
