@@ -282,19 +282,59 @@
             In mountainous environments, topography strongly affects
             the reflectance due to illumination effects and cast shadows, which introduce errors
             in land cover classifications.
-There are several standard algorithms including the C correction model to diminish
+        There are several standard algorithms including the C correction model to diminish
             these kind of effects of topography. Enhanced C-correction
         resulted in significantly (p ≤ 0.05) higher classification accuracies and better forest
         classifications, especially for the mixed forests.</text>
         <a href="https://www.sciencedirect.com/science/article/pii/S0303243422000423" target="_blank" >[7]&#128072;
         </a>
+        <br><span id="dots3">...</span><span id="more3">
+        <br>
 
+        <text style="color:purple;">the solar radiation incident on a slope varies strongly with slope
+            azimuth relative to the sun. Topographic correction, also known as illumination
+            correction or illumination compensation, aims to minimize the variability of
+            observed reflectance due to topography by correcting for the effects of a variable
+            local incidence angle (Liang, 2005, Richter, 1998).
+            <a href="https://www.sciencedirect.com/science/article/pii/S0303243422000423#b0220" target="_blank" >[8]&#128072;
+        </a>
+            The first step in the correction of topographic shadows is the
+            computation of the illumination angle, which is based on the following formula
+            (Civco, 1989, Colby, 1991):
+            <br>
+            <br>
+            &emsp;&emsp;&gamma;<sub>i</sub> = cos &theta;<sub>s</sub> cos &eta;<sub>i</sub> + sin &theta;<sub>s</sub> sin &eta;<sub>i</sub> (&phi;<sub>a</sub> - &phi;<sub>o</sub>)
+            <br>
+            <br>
+            where γi is the incidence angle, θs is the solar
+            zenith angle; ηi is the slope angle; Фa is the solar azimuth angle and Фo is
+            the slope aspect.
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0303243411000584#preview-section-snippets" target="_blank" >[9]&#128072;
+        </a>
+        From the assessed methods, the C-correction and the empiric–statistic method gave the
+        best results when analyzing the homogeneity of different land covers after correction.
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0303243411000584" target="_blank" >[10]&#128072;
+        </a>
+        The C normalization belongs to a class of non-Lambertian methods [6]. It can be defined as:
+        <br>
+        <br>
+        &emsp;&emsp;&rho;<sub>H</sub> = &rho;<sub>T</sub> * [(cos &theta;<sub>s</sub> + c<sub>k</sub>)&divide;(cos &beta; + c<sub>k</sub>)]
+        <a href="https://www.mdpi.com/2072-4292/1/3/184" target="_blank" >[11]&#128072;
+        </a>
+            <br>
+            <br>
+            where k indicates the channel dependence, and ρT = ak + bk cosβ, and ak, bk are calculated
+            from the regression equation of the terrain reflectance versus the local illumination angle
+            (ck = bk/ak). This approach avoids the problems associated with small values of cosβ by
+            adding the term ck in the denominator. The ck accounts for the diffuse radiance component
+            if TOA reflectance data is used, and for residual effects in case of surface reflectance.
+        </text>
         <br>
         <br>
            Se utilizó el software SAGA incluido en QGIS así como el <b>Modelo de Elevación de
         Terreno</b> (MET) para realizar el procedimiento de corrección de iluminación topográfica
         por el método de <b>factor C</b> aplicado a las bandas 3, 4, 8 y 11 de la escena MSI.
-        El MET se obtuvo <span id="dots3">...</span><span id="more3"> a través del <b>Continuo de
+        El MET se obtuvo a través del <b>Continuo de
         Elevaciones Mexicano </b>
         (<a href="https://www.inegi.org.mx/app/geo2/elevacionesmex/#:~:text=El%20Continuo%20de%20Elevaciones%20Mexicano%203.0%20%28CEM%203.0%29,le%20integran%20valores%20que%20representan%20las%20elevaciones%20%28Z%29." target="_blank">CEM</a>)
         del Instituto de Geografíaa, Estadística e Informática (INEGI).
@@ -373,11 +413,15 @@ There are several standard algorithms including the C correction model to dimini
         <br>
         <text style="color:#707050"><i>
             Fuentes:<br>
+            https://www.sciencedirect.com/science/article/abs/pii/S0303243411000584#preview-section-snippets<br>
             https://www.researchgate.net/publication/259275014_Topographic_correction_of_satellite_images_Theory_and_application<br>
             https://www.sciencedirect.com/science/article/abs/pii/S0303243411000584<br>
             https://www.sciencedirect.com/science/article/abs/pii/S0034425711000411<br>
             https://www.researchgate.net/publication/270895671_Review_of_Different_Topographic_Correction_Techniques_for_Satellite_Imagery<br>
-            https://www.sciencedirect.com/science/article/pii/S0303243422000423
+            https://www.sciencedirect.com/science/article/pii/S0303243422000423<br>
+            https://www.sciencedirect.com/science/article/pii/S0303243422000423#b0220<br>
+            https://www.researchgate.net/publication/301677429_CORRECCION_TOPOGRAFICA_A_IMAGENES_LANDSAT_POR_CLASES_DE_PENDIENTE<br>
+            https://www.researchgate.net/publication/361944391_Como_realizar_correcciones_topograficas_a_imagenes_satelitales_con_QGIS
             <br>
             <br>
             Datos de elevación:<br>
@@ -398,7 +442,7 @@ There are several standard algorithms including the C correction model to dimini
         <br>
         <br>
         <iframe width="100%" height="420"
-                src="https://www.youtube.com/embed/Vp8mBaxC1ns?autoplay=1&controls=0&showinfo=0&mute=1&loop=1&playlist=Vp8mBaxC1ns"  title="dron vuelo Sierra Fría"
+                src="https://www.youtube.com/embed/2lE5eJ9KM98?autoplay=1&controls=0&showinfo=0&mute=1&loop=1&playlist=2lE5eJ9KM98"  title="dron vuelo Sierra Fría"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen class="centerxx"></iframe>
         </iframe>
@@ -422,24 +466,24 @@ There are several standard algorithms including the C correction model to dimini
             sensors that measure wavelengths of light absorbed and reflected by green plants. Certain
             pigments in plant leaves strongly absorb wavelengths of visible (red) light. The leaves
             themselves strongly reflect wavelengths of near-infrared light, which is invisible to
-            human eyes. <a href="https://www.usgs.gov/special-topics/remote-sensing-phenology/science/vegetation-indices#:~:text=Vegetation%20Indices%20Remote%20sensing%20phenology%20studies%20use%20data,leaves%20strongly%20absorb%20wavelengths%20of%20visible%20%28red%29%20light" target="_blank" >[8]&#128072;
+            human eyes. <a href="https://www.usgs.gov/special-topics/remote-sensing-phenology/science/vegetation-indices#:~:text=Vegetation%20Indices%20Remote%20sensing%20phenology%20studies%20use%20data,leaves%20strongly%20absorb%20wavelengths%20of%20visible%20%28red%29%20light" target="_blank" >[9]&#128072;
         </a> It is well known that the
             reflectance of light spectra from plants changes with plant type, water content within
-        tissues, and other intrinsic factors. <a href="https://www.hindawi.com/journals/js/2017/1353691/" target="_blank" >[9]&#128072;
+        tissues, and other intrinsic factors. <a href="https://www.hindawi.com/journals/js/2017/1353691/" target="_blank" >[10]&#128072;
         </a>
 
         The <b>NDVI</b> is a dimensionless index that
         monitors vegetation dynamic by
             computing the difference between visible and near-infrared reflectance to estimate the
         concentration of greens vegetation in a particular area (Weier & Herring, 2000).
-            <a href="ttps://www.sciencedirect.com/topics/earth-and-planetary-sciences/vegetation-index" target="_blank" >[10]&#128072;
+            <a href="ttps://www.sciencedirect.com/topics/earth-and-planetary-sciences/vegetation-index" target="_blank" >[11]&#128072;
         </a>
         The main applications for remote sensing of vegetation are based
             on the following
             light spectra: (i) the ultraviolet region (UV), which goes from 10 to 0.38 &micro; (ii) the
             visible spectra, which are composed of the blue (0.450–0.495 &micro;), green (0.495−0.57 &micro;),
             and red (0.620–0.75 &micro;;) wavelength regions; and (iii) the near and mid infrared band
-        (0.85–1.7 &micro;).</text><a href="https://www.hindawi.com/journals/js/2017/1353691/" target="_blank" >[11]&#128072;
+        (0.85–1.7 &micro;).</text><a href="https://www.hindawi.com/journals/js/2017/1353691/" target="_blank" >[12]&#128072;
         </a>
 
         <br>
@@ -762,6 +806,7 @@ There are several standard algorithms including the C correction model to dimini
         <br>
         <br>
     </section>
+        <br>
         <br>
         <br>
         <iframe width="100%" height="420"
