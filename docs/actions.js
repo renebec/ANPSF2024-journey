@@ -1,3 +1,5 @@
+
+
 function myFunction0() {
   var dots0 = document.getElementById("dots0");
   var moreText0 = document.getElementById("more0");
